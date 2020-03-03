@@ -6,8 +6,11 @@ public class Personne {
 	public String prenom;
 	public AdressePostale adresse;
 
+		
+	//2eme constructeur
+		
 	public Personne(String nom, String prenom, AdressePostale adresse) {
-		super();
+		
 		this.nom = nom;
 		this.prenom = prenom;
 		this.adresse = adresse;
