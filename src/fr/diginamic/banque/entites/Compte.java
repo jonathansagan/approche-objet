@@ -1,9 +1,20 @@
 package fr.diginamic.banque.entites;
 
+/** Représente un compte bancaire
+ * @author Jonathan
+ *
+ */
 public class Compte {
+	
+	/** numéro du Compte */
 	private String num; // attributs
+	/** solde du Compte */
 	private double solde; //attributs
 	
+	/** Constructeur
+	 * @param numéro du compte
+	 * @param solde du compte
+	 */
 	public Compte(String num, double solde) {//constructeur
 		
 		this.num = num;
