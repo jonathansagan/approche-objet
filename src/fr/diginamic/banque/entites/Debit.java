@@ -11,7 +11,7 @@ public class Debit extends Operation {
 	
 	@Override
 	public String afficherType() {
-		// TODO Auto-generated method stub
+		
 		return "Débit";
 	}
 }

@@ -13,7 +13,7 @@ public class TestOperation {
 		double soldeGlobal = 0.0;
 		for (int i = 0; i < ops.length; i++) {
 			System.out.println(ops[i]);
-			if (ops[i].afficherType().equals("Debit")) {
+			if (ops[i].afficherType().equals("Débit")) {
 				soldeGlobal -= ops[i].getMontant();
 			} else {
 				soldeGlobal += ops[i].getMontant();
