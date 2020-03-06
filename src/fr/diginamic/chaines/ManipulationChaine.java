@@ -1,5 +1,8 @@
 package fr.diginamic.chaines;
 
+import entites.Personne;
+import fr.diginamic.banque.entites.Compte;
+
 public class ManipulationChaine {
 
 	public static void main(String[] args) {
@@ -38,12 +41,20 @@ personne.*/
 		System.out.println("Le nom de famille en minuscule est : " + nomMin);
 		
 		 /*la méthode split pour découper la chaine de caractères en morceaux*/
-		String[] morceaux = chaine.split(";");
-		for (int i = 0; i < morceaux.length; i++) {
-			System.out.println("Morceaux n°" + i + " : " + morceaux[i]);
+		String[] decoupe = chaine.split(";");
+		for (int i = 0; i < decoupe.length; i++) {
+			System.out.println("Morceau n°" + i + " : " + decoupe[i]);
 		}
 		/*Creez une instance et Client et de Compte à partir des éléments issus du découpage de
 la chaine de caractères.*/
+		
+			
+				
+		Client client1 = new Client(decoupe[0], decoupe[1]);
+		Compte c  = new Compte(String.valueOf(decoupe[2]), Double.parseDouble(decoupe[3].replace(" ", "")));
+		System.out.println("Le client : " +client1.nom + " " + client1.prenom);
+		System.out.println(c);
+
 		
 		
 		
