@@ -26,4 +26,10 @@ public class Pigiste extends Intervenant {
 		return nbreJ*montantJ;
 	}
 
+	@Override
+	public String getStatut() {
+		// TODO Auto-generated method stub
+		return "Pigiste";
+	}
+
 }
