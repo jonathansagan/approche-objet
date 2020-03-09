@@ -28,6 +28,8 @@ public class TestListInt {
 		liste2.addAll(liste1); // on ajoute la liste1 sans le min à la liste 2
 		System.out.println("La liste 1 sans le min est : "+liste2);
 		// convertir des négatifs en positifs?
+		liste2.replaceAll(e->Math.abs(e));
+		System.out.println(liste2);
 	
 
 	}
