@@ -1,4 +1,4 @@
-package Interference;
+package interfaces;
 
 public class TestObjetGeometrique {
 

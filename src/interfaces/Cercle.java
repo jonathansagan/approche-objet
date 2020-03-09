@@ -1,4 +1,4 @@
-package Interference;
+package interfaces;
 
 /** Représente un Cercle
  * @author Jonathan
