@@ -29,8 +29,8 @@ ArrayList<Ville> liste = new ArrayList<>();
 		Ville ville6 = new Ville("Pau",77_200);
 		Ville ville7 = new Ville("Marseille",850_700);
 		Ville ville8 = new Ville("Tarbes",40_600);
-		
 		liste.addAll(Arrays.asList(ville1,ville2,ville3,ville4,ville5,ville6,ville7,ville8));
+		
 		int max = ville1.getNbHab();
 		String maxVille = ville1.getNom();
 		for (Ville ville : liste) {
