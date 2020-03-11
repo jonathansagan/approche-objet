@@ -2,18 +2,20 @@ package sets;
 
 import java.util.HashSet;
 
-public class Pays implements Comparable<Pays>{
+public class Pays implements Comparable<Pays> {
 	// nom, nb d’habitants, PIB/habitant
 	String nom;
 	int nbHab;
-	double pibHab;
-	
-	/** Constructeur d'un pays
+	int pibHab;
+
+	/**
+	 * Constructeur d'un pays
+	 * 
 	 * @param nom
 	 * @param nbHab
 	 * @param pibHab
 	 */
-	public Pays(String nom, int nbHab, double pibHab) {
+	public Pays(String nom, int nbHab, int pibHab) {
 		super();
 		this.nom = nom;
 		this.nbHab = nbHab;
@@ -36,25 +38,33 @@ public class Pays implements Comparable<Pays>{
 		this.nbHab = nbHab;
 	}
 
-	public double getPibHab() {
+	public int getPibHab() {
 		return pibHab;
 	}
 
-	public void setPibHab(double pibHab) {
+	public void setPibHab(int pibHab) {
 		this.pibHab = pibHab;
 	}
-	
+
 	public String toString() {
-		return this.nom+" - PIB : "+this.pibHab+"USD - Population : "+this.nbHab;
+		return this.nom + " - PIB : " + this.pibHab + "USD - Population : " + this.nbHab;
 	}
 
-	/** comparateur compareTo
+	/**
+	 * comparateur compareTo
+	 * 
 	 * @param pays2
 	 * @return
 	 */
+	// pour comparer suivant le nom et trier par ordre alphab
+//	public int compareTo(Pays pays) {
+//		int result=this.nom.compareTo(pays.getNom());
+//		return result;
+//	}
+	// pour trier par pib :
 	@Override
 	public int compareTo(Pays pays) {
-		int result=this.nom.compareTo(pays.getNom());
+		int result = this.pibHab - pays.getPibHab();
 		return result;
 	}
 

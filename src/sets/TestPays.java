@@ -8,15 +8,15 @@ public class TestPays {
 
 	public static void main(String[] args) {
 		HashSet<Pays> set = new HashSet<Pays>();
-		set.add(new Pays("USA", 	372_200_000, 	59_531.66));
-		set.add(new Pays("France",	66_990_000,		38_476.66));
-		set.add(new Pays("Allemagne",82_520_000,	44_469.91));
-		set.add(new Pays("UK",		66_040_000,		39_720.44));
-		set.add(new Pays("Italie",	60_590_000,		31_952.98));
-		set.add(new Pays("Japon",	126_800_000,	38_428.10));
-		set.add(new Pays("Chine",	1_386_000_000,	8_826.99));
-		set.add(new Pays("Russie",	144_500_000,	10_743.10));
-		set.add(new Pays("Inde",	1_339_000_000,	1_939.61));
+		set.add(new Pays("USA", 	372_200_000, 	59_531));
+		set.add(new Pays("France",	66_990_000,		38_476));
+		set.add(new Pays("Allemagne",82_520_000,	44_469));
+		set.add(new Pays("UK",		66_040_000,		39_720));
+		set.add(new Pays("Italie",	60_590_000,		31_952));
+		set.add(new Pays("Japon",	126_800_000,	38_428));
+		set.add(new Pays("Chine",	1_386_000_000,	8_826));
+		set.add(new Pays("Russie",	144_500_000,	10_743));
+		set.add(new Pays("Inde",	1_339_000_000,	1_939));
 		
 		Iterator<Pays> iterator = set.iterator();
 		Pays maxPib = iterator.next();

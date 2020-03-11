@@ -23,15 +23,15 @@ public class MapPays {
 		
 		HashMap<String,Pays> m = new HashMap<>();
 
-		m.put("USA",new Pays("USA", 372_200_000, 	59_531.66));
-		m.put("France",new Pays("France", 66_990_000,		38_476.66));
-		m.put("Allemagne",new Pays("Allemagne",82_520_000,	44_469.91));
-		m.put("UK",new Pays("UK", 66_040_000,		39_720.44));
-		m.put("Italie",new Pays("Italie",60_590_000,		31_952.98));
-		m.put("Japon",new Pays("Japon", 126_800_000,	38_428.10));
-		m.put("Chine",new Pays("Chine", 1_386_000_000,	8_826.99));
-		m.put("Russie",new Pays("Russie", 144_500_000,	10_743.10));
-		m.put("Inde",new Pays("Inde",1_339_000_000,	1_939.61));
+		m.put("USA",new Pays("USA", 372_200_000, 	59_531));
+		m.put("France",new Pays("France", 66_990_000,		38_476));
+		m.put("Allemagne",new Pays("Allemagne",82_520_000,	44_469));
+		m.put("UK",new Pays("UK", 66_040_000,		39_720));
+		m.put("Italie",new Pays("Italie",60_590_000,		31_952));
+		m.put("Japon",new Pays("Japon", 126_800_000,	38_428));
+		m.put("Chine",new Pays("Chine", 1_386_000_000,	8_826));
+		m.put("Russie",new Pays("Russie", 144_500_000,	10_743));
+		m.put("Inde",new Pays("Inde",1_339_000_000,	1_939));
 
 		System.out.println("Map : "+m);
 
