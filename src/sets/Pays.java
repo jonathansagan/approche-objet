@@ -2,7 +2,7 @@ package sets;
 
 import java.util.HashSet;
 
-public class Pays {
+public class Pays implements Comparable<Pays>{
 	// nom, nb d’habitants, PIB/habitant
 	String nom;
 	int nbHab;
@@ -46,6 +46,16 @@ public class Pays {
 	
 	public String toString() {
 		return this.nom+" - PIB : "+this.pibHab+"USD - Population : "+this.nbHab;
+	}
+
+	/** comparateur compareTo
+	 * @param pays2
+	 * @return
+	 */
+	@Override
+	public int compareTo(Pays pays) {
+		int result=this.nom.compareTo(pays.getNom());
+		return result;
 	}
 
 }

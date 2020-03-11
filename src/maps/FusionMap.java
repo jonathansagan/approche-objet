@@ -17,7 +17,7 @@ public class FusionMap {
 		map2.put(4, "Blanc");
 		map2.put(5, "Bleu");
 		map2.put(6, "Orange");
-		System.out.println("Map 3 : "+map2);
+		System.out.println("Map 2 : "+map2);
 		
 		// Fusion des map 1 et 2 en map 3:
 		HashMap<Integer, String> map3 = new HashMap<>();
