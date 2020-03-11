@@ -71,7 +71,7 @@ public class Application {
 				villeMin = v;
 			}
 		}
-		System.out.println("Plus petite ville du département :" + villeMin);
+		System.out.println("Plus petite ville du département : " + villeMin);
 
 		// Etape 7 : Afficher la population d'occitanie
 		int popRegion = 0;
