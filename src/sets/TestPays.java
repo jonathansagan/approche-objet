@@ -56,6 +56,14 @@ public class TestPays {
 		set.remove(minPibTotal);
 
 		System.out.println(set);
+		
+		// Test de l'égalité entre deux pays : 
+		Pays pays1 = new Pays("USA" , 327, 59531);
+		Pays pays2 = new Pays("France" , 66 , 38476);
+		Pays pays3 = new Pays("France" , 66 , 38476);
+
+		System.out.println("Le pays 1 est-il égal au pays 2 ? " + pays1.equals(pays2));
+		System.out.println("Le pays 2 est-il égal au pays 3 ? " + pays2.equals(pays3));
 
 	}
 

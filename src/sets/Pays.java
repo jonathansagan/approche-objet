@@ -58,7 +58,7 @@ public class Pays implements Comparable<Pays> {
 	 */
 	// pour comparer suivant le nom et trier par ordre alphab
 //	public int compareTo(Pays pays) {
-//		int result=this.nom.compareTo(pays.getNom());
+//		int result=this.nom.compareTo(pays.getNom()); (pour trier par ordre inverse faire : int result= - this.nom.compareTo(pays.getNom());
 //		return result;
 //	}
 	// pour trier par pib :
@@ -68,4 +68,12 @@ public class Pays implements Comparable<Pays> {
 		return result;
 	}
 
+	@Override // redefinition de la méthode equals
+	public boolean equals(Object object) {
+		if (!(object instanceof Pays)) {
+			return false;
+		}
+		Pays other = (Pays) object;
+		return nom.equals(other.getNom());
+	}
 }
