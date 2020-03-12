@@ -13,7 +13,7 @@ Operations operation = new Operations();
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
-
+System.out.println("suite programme");
 
 	}
 
