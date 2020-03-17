@@ -9,8 +9,12 @@ public final class StringUtils {
 	* @param lhs chaine 1
 	* @param rhs chaine 2
 	* @return distance
+	 * @throws IncorrectParameterException 
 	*/
-	public static int levenshteinDistance(CharSequence lhs, CharSequence rhs) {
+	public static int levenshteinDistance(CharSequence lhs, CharSequence rhs) throws IncorrectParameterException {
+		if (lhs == null || rhs==null) {
+			throw new IncorrectParameterException("Impossible de ne rien saisir, null n'a pas de distance de Levenshtein");
+		}
 	int len0 = lhs.length() + 1;
 	int len1 = rhs.length() + 1;
 

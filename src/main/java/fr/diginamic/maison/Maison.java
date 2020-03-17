@@ -68,4 +68,12 @@ public class Maison {
 		return superficieTot;
 	}
 
+	public Piece[] getPieces() {
+		return pieces;
+	}
+
+	public void setPieces(Piece[] pieces) {
+		this.pieces = pieces;
+	}
+
 }
