@@ -21,7 +21,11 @@ public class Maison {
 	 * 
 	 * @param nvPiece
 	 */
-	public void ajouterPiece(Piece nvPiece) {
+	public void ajouterPiece(Piece nvPiece) throws PieceException {
+		
+		if (nvPiece ==null) {
+			throw new PieceException ("Interdit d'ajouter une pièce vide");
+		}
 		/*
 		 * Création d'un tableau temporaire appelé newTab qui a une taille égale à la
 		 * tableau du tableau pieces+1
