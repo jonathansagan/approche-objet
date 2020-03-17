@@ -12,5 +12,12 @@ public class Test {
 		
 		assertEquals(1, resultat);
 	}
+	
+	@org.junit.Test
+	public void testLevenshteinDistance2() {
+		int resultat2 = StringUtils.levenshteinDistance(null,null);
+		
+		assertEquals(1, resultat2);
+	}
 
 }
